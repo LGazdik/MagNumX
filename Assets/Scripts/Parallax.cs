@@ -6,7 +6,7 @@ public class Parallax : MonoBehaviour
 {
     private float length, startpos;
     [SerializeField] Transform player;
-    float parallaxEffect;
+    [SerializeField] float parallaxEffect;
     // Start is called before the first frame update
     void Start()
     {
