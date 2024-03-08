@@ -9,13 +9,14 @@ public class movement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 playerOneMovement;
-    private Vector2 playerTwoMovement;
+    //private Vector2 playerTwoMovement;
     private bool isFacingRight = true;
     [SerializeField] float speed = 5f;
     [SerializeField]private bool isOnePlayer = false;
 
     private bool canJump = false;
-    [SerializeField] float jumpHeight = 2f;
+    [SerializeField] float gravity = -9.81f;
+    [SerializeField] float jumpForce = 2f;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float radius = .05f;
@@ -28,7 +29,7 @@ public class movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        canJump= false;
     }
 
     // Update is called once per frame
@@ -39,10 +40,21 @@ public class movement : MonoBehaviour
         //Debug.Log(x);
         playerOneMovement.x = x;
 
-        canJump = Physics2D.OverlapCircle(groundCheck.position, radius, mask);
+        Collider2D[] col = Physics2D.OverlapCircleAll(groundCheck.position, radius , mask);
+        if(col.Length > 0)
+        {
+            canJump = true;
+
+        }
+        else
+        {
+            canJump = false;
+        }
+        
+
         Debug.Log(canJump);
 
-        if (Input.GetKeyDown(KeyCode.W) && canJump)
+        if (Input.GetKey(KeyCode.W) && canJump)
         {
             Debug.Log("we can jujmp");
             Jump();
@@ -55,14 +67,16 @@ public class movement : MonoBehaviour
     {
         Debug.Log("we are jumping");
         Debug.Log(canJump);
-       // movement.y = Mathf.Sqrt(jumpHeight * -2 - rb.gravityScale;
+
+        rb.AddForce(jumpForce * transform.up, ForceMode2D.Force);
 
     }
 
     private void FixedUpdate()
     {
        // if(isOnePlayer)
-            rb.MovePosition(rb.position + playerOneMovement * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + playerOneMovement * speed * Time.fixedDeltaTime);
+
         if(playerOneMovement.x < 0 && isFacingRight)
         {
             Flip();

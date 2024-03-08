@@ -271,12 +271,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   isOnePlayer: 0
-  jumpHeight: 2
+  gravity: -9.81
+  jumpForce: 2
   groundCheck: {fileID: 1221585585}
   radius: 0.8
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!61 &1515028266
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -337,7 +338,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3.13
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -348,7 +349,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!4 &1515028268
 Transform:
   m_ObjectHideFlags: 0
@@ -358,7 +359,7 @@ Transform:
   m_GameObject: {fileID: 1515028264}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.4, z: 0}
+  m_LocalPosition: {x: 0, y: 4.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -469,7 +470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1584491342}
   - component: {fileID: 1584491343}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Vrstva_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1767671486}
   - component: {fileID: 1767671485}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,10 +608,11 @@ PolygonCollider2D:
     - - {x: 15.883253, y: 1.0470119}
       - {x: 14.7420225, y: 0.10434067}
       - {x: 11.330292, y: -1.2987309}
-      - {x: 7.120609, y: -1.9739276}
-      - {x: 3.7149754, y: -0.86586076}
-      - {x: 1.6385814, y: -0.20878828}
-      - {x: -3.1760113, y: -0.020195723}
+      - {x: 7.4937787, y: 2.4574652}
+      - {x: 4.7411923, y: 1.4198053}
+      - {x: 2.52486, y: 1.8436457}
+      - {x: -2.6629028, y: 2.312116}
+      - {x: -8.845406, y: 2.9562988}
       - {x: -11.382464, y: 0.38153422}
       - {x: -17.595097, y: 1.5972512}
       - {x: -17.526169, y: -4.017109}
