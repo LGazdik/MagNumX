@@ -15,7 +15,7 @@ public class Tree : MonoBehaviour
     {
         
     }
-    public void DoSomething()
+    public void DestroyMe()
     {
         Destroy(gameObject);
     }

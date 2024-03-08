@@ -28,7 +28,7 @@ public class interactions : MonoBehaviour
             if (col.GetComponent<Tree>() != null)
             {
                 var obj = col.GetComponent<Tree>();
-                obj.DoSomething();
+                obj.DestroyMe();
             }
         }
     }
