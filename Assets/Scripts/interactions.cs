@@ -6,10 +6,6 @@ public class interactions : MonoBehaviour
 {
     public Transform inter;
     public float interactiveColliderSize;
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
@@ -28,8 +24,15 @@ public class interactions : MonoBehaviour
             if (col.GetComponent<Tree>() != null)
             {
                 var obj = col.GetComponent<Tree>();
-                obj.DoSomething();
+                obj.DestroyMe();
             }
+
+            if (col.GetComponent<AnimObject>() != null)
+            {
+                var obj = col.GetComponent<AnimObject>();
+                obj.PlayMe();
+            }
+
         }
     }
 

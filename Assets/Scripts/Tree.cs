@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -9,7 +7,7 @@ public class Tree : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -17,7 +15,7 @@ public class Tree : MonoBehaviour
     {
 
     }
-    public void DoSomething()
+    public void DestroyMe()
     {
         m_Rigidbody.bodyType = RigidbodyType2D.Dynamic;
         m_Rigidbody.AddForce(transform.up * 1000f, ForceMode2D.Impulse);
