@@ -13,8 +13,13 @@ public class movement : MonoBehaviour
     private bool isFacingRight = true;
     [SerializeField] float speed = 5f;
     [SerializeField]private bool isOnePlayer = false;
+
+    private bool canJump = false;
+    [SerializeField] float jumpHeight = 2f;
+
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float radius = .05f;
+    [SerializeField] private LayerMask mask;
 
     private void Awake()
     {
@@ -30,10 +35,28 @@ public class movement : MonoBehaviour
     void Update()
     {
         float x = Input.GetAxisRaw("Horizontal");
-        //float y = Input.GetAxisRaw("Vertical");
-        Debug.Log(x);
+       
+        //Debug.Log(x);
         playerOneMovement.x = x;
+
+        canJump = Physics2D.OverlapCircle(groundCheck.position, radius, mask);
+        Debug.Log(canJump);
+
+        if (Input.GetKeyDown(KeyCode.W) && canJump)
+        {
+            Debug.Log("we can jujmp");
+            Jump();
+
+        }
        // playerOneMovement.x = y;
+    }
+
+    private void Jump()
+    {
+        Debug.Log("we are jumping");
+        Debug.Log(canJump);
+       // movement.y = Mathf.Sqrt(jumpHeight * -2 - rb.gravityScale;
+
     }
 
     private void FixedUpdate()
@@ -51,7 +74,7 @@ public class movement : MonoBehaviour
         // else
         // rb.MovePosition(rb.position + playerTwoMovement * speed * Time.fixedDeltaTime);
 
-       // if(Physics2D.OverlapCircle())
+        
     }
 
     private void Flip()
@@ -64,6 +87,6 @@ public class movement : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        
+        Gizmos.DrawWireSphere(groundCheck.position, radius);
     }
 }
