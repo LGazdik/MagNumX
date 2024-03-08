@@ -10,9 +10,11 @@ public class movement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 playerOneMovement;
     private Vector2 playerTwoMovement;
-    private bool isFacingRight;
+    private bool isFacingRight = true;
     [SerializeField] float speed = 5f;
     [SerializeField]private bool isOnePlayer = false;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float radius = .05f;
 
     private void Awake()
     {
@@ -38,23 +40,30 @@ public class movement : MonoBehaviour
     {
        // if(isOnePlayer)
             rb.MovePosition(rb.position + playerOneMovement * speed * Time.fixedDeltaTime);
-        if(isFacingRight && playerOneMovement.x < 0)
+        if(playerOneMovement.x < 0 && isFacingRight)
         {
             Flip();
         }
-        else if (!isFacingRight && playerOneMovement.x < 0)
+        if (playerOneMovement.x > 0 && !isFacingRight)
         {
             Flip();
         }
         // else
         // rb.MovePosition(rb.position + playerTwoMovement * speed * Time.fixedDeltaTime);
+
+       // if(Physics2D.OverlapCircle())
     }
 
     private void Flip()
     {
         Vector3 scale = transform.localScale;
         scale.x *= -1f;
-        transform.Rotate(Vector3.up, 180f);
+        transform.localScale = scale;
         isFacingRight = !isFacingRight;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        
     }
 }
