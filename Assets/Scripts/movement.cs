@@ -54,7 +54,7 @@ public class movement : MonoBehaviour
         }
         
 
-        Debug.Log(canJump);
+        //Debug.Log(canJump);
 
         if (Input.GetKeyDown(KeyCode.W) && canJump)
         {
