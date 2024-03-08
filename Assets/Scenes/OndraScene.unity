@@ -271,8 +271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   isOnePlayer: 0
-  gravity: -9.81
-  jumpForce: 2
+  jumpForce: 10
   groundCheck: {fileID: 1221585585}
   radius: 0.8
   mask:

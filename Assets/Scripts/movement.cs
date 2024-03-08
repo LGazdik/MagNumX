@@ -8,14 +8,16 @@ public class movement : MonoBehaviour
 {
 
     private Rigidbody2D rb;
-    private Vector2 playerOneMovement;
+    
     //private Vector2 playerTwoMovement;
     private bool isFacingRight = true;
     [SerializeField] float speed = 5f;
     [SerializeField]private bool isOnePlayer = false;
 
     private bool canJump = false;
-    [SerializeField] float gravity = -9.81f;
+
+    float horizontal;
+    
     [SerializeField] float jumpForce = 2f;
 
     [SerializeField] private Transform groundCheck;
@@ -35,10 +37,10 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = Input.GetAxisRaw("Horizontal");
+        horizontal = Input.GetAxisRaw("Horizontal");
        
         //Debug.Log(x);
-        playerOneMovement.x = x;
+        
 
         Collider2D[] col = Physics2D.OverlapCircleAll(groundCheck.position, radius , mask);
         if(col.Length > 0)
@@ -54,34 +56,40 @@ public class movement : MonoBehaviour
 
         Debug.Log(canJump);
 
-        if (Input.GetKey(KeyCode.W) && canJump)
+        if (Input.GetKeyDown(KeyCode.W) && canJump)
         {
-            Debug.Log("we can jujmp");
+            
             Jump();
 
         }
-       // playerOneMovement.x = y;
+
+        if (Input.GetKeyUp(KeyCode.W) && rb.velocity.y > 0)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+
+        }
+       
     }
 
     private void Jump()
     {
-        Debug.Log("we are jumping");
-        Debug.Log(canJump);
+        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
 
-        rb.AddForce(jumpForce * transform.up, ForceMode2D.Force);
+        
 
     }
 
     private void FixedUpdate()
     {
        // if(isOnePlayer)
-        rb.MovePosition(rb.position + playerOneMovement * speed * Time.fixedDeltaTime);
+        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        //rb.velocity += new Vector2(playerOneMovement.x, gravity * Time.fixedDeltaTime * Time.fixedDeltaTime);
 
-        if(playerOneMovement.x < 0 && isFacingRight)
+        if(horizontal < 0 && isFacingRight)
         {
             Flip();
         }
-        if (playerOneMovement.x > 0 && !isFacingRight)
+        if (horizontal > 0 && !isFacingRight)
         {
             Flip();
         }
