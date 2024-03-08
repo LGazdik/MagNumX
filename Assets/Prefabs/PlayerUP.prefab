@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7441047029002832071}
   - component: {fileID: 4728414195094841926}
   - component: {fileID: 8752710205105346263}
+  - component: {fileID: 6973896965644544951}
   - component: {fileID: 8181490399031095942}
   - component: {fileID: 6959901327897739934}
-  - component: {fileID: 6973896965644544951}
   m_Layer: 0
   m_Name: PlayerUP
   m_TagString: Untagged
@@ -110,40 +110,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.651826, y: 3.0885637}
   m_EdgeRadius: 0
---- !u!114 &8181490399031095942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472872541480699224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab2e2561269200245addab162f3445c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  isOnePlayer: 0
-  jumpForce: 15
-  groundCheck: {fileID: 5575418323181936675}
-  radius: 0.3
-  mask:
-    serializedVersion: 2
-    m_Bits: 64
---- !u!114 &6959901327897739934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472872541480699224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e30d5f71bac91904aae716c620415f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inter: {fileID: 1821283841376810456}
-  interactiveColliderSize: 0.5
 --- !u!212 &6973896965644544951
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -196,6 +162,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8181490399031095942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472872541480699224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2e2561269200245addab162f3445c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  isOnePlayer: 0
+  jumpForce: 15
+  groundCheck: {fileID: 5575418323181936675}
+  radius: 0.3
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &6959901327897739934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472872541480699224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e30d5f71bac91904aae716c620415f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: {fileID: 1821283841376810456}
+  anim: {fileID: 0}
+  interactiveColliderSize: 0.5
 --- !u!1 &7713536734097232250
 GameObject:
   m_ObjectHideFlags: 0
