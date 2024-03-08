@@ -21,9 +21,9 @@ public class interactions : MonoBehaviour
         foreach (Collider2D col in cols)
         {
             Debug.Log(col);
-            if (col.GetComponent<Tree>() != null)
+            if (col.GetComponent<InteractionTree>() != null)
             {
-                var obj = col.GetComponent<Tree>();
+                var obj = col.GetComponent<InteractionTree>();
                 obj.DestroyMe();
             }
 
