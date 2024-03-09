@@ -58,6 +58,9 @@ public class interactions : MonoBehaviour
                     }
                 }
             }
+
+            if (col.GetComponent<LeverLogic>() is LeverLogic l)
+                l.Interact();
         }
     }
 
