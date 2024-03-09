@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class interactions : MonoBehaviour
@@ -42,7 +43,8 @@ public class interactions : MonoBehaviour
                     {
                         if (GetComponent<Rigidbody2D>() is Rigidbody2D r)
                             r.constraints = RigidbodyConstraints2D.FreezePosition;
-                        GetComponent<SpriteRenderer>().enabled = false;
+                        var spr = GetComponentsInChildren<SpriteRenderer>().ToList();
+                        spr.ForEach(x => x.enabled = false);
                     }
                 }
                 else
@@ -52,7 +54,8 @@ public class interactions : MonoBehaviour
                     {
                         if (GetComponent<Rigidbody2D>() is Rigidbody2D r)
                             r.constraints = RigidbodyConstraints2D.FreezeRotation;
-                        GetComponent<SpriteRenderer>().enabled = true;
+                        var spr = GetComponentsInChildren<SpriteRenderer>().ToList();
+                        spr.ForEach(x => x.enabled = true);
                     }
                 }
             }

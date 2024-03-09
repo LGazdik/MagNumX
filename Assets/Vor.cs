@@ -32,12 +32,14 @@ public class Vor : MonoBehaviour
 
             if (isOnBoat && isLockedOnBoat)
             {
-                if(transform.position.x  + 0.3f < xLimit)
+                if(transform.position.x > xLimit)
                 {
+                    transform.position = new Vector3(xLimit, transform.position.y, transform.position.z);
                     Debug.Log("je mensi");
-                     transform.position += new Vector3(x, 0, 0);
 
                 }
+                transform.position += new Vector3(x, 0, 0);
+                
                 if (platform != null)
                 {
                     if (!isMirrored)

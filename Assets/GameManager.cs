@@ -13,9 +13,12 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
-    public void Start()
+    public void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Restart();
+        }
     }
 
     public void Restart()
