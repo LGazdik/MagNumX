@@ -22,6 +22,7 @@ public class movement2 : MonoBehaviour
     [SerializeField] private LayerMask mask;
 
     public AudioSource jumpSound;
+    public AudioSource walkSound;
 
     private void Awake()
     {
@@ -37,6 +38,10 @@ public class movement2 : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Vertical");
+        if (horizontal != 0)
+            walkSound.volume = 1;
+        else
+            walkSound.volume = 0;
 
         //Debug.Log(x);
 
