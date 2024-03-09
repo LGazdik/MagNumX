@@ -2,23 +2,28 @@ using UnityEngine;
 
 public class World : MonoBehaviour
 {
-
-    void Start()
-    {
-
-    }
-
+    private bool IsUp = true;
     void Update()
     {
-
+        if (Input.GetKeyUp(KeyCode.RightShift) && Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            FlipWorld();
+        }
     }
 
     public void FlipWorld()
     {
-        if(Input.GetKeyUp(KeyCode.RightShift) && Input.GetKeyUp(KeyCode.LeftShift))
+        Debug.Log("Fliper not fliping");
+        if (IsUp)
         {
-            Debug.Log("Fliper not fliping");
-            transform.rotation = Quaternion.Euler(new Vector2(-1,0));
+            IsUp = false;
+            transform.rotation = Quaternion.Euler(new Vector2(-180, 0));
         }
+        else
+        {
+            IsUp = true;
+            transform.rotation = Quaternion.Euler(new Vector2(0, 0));
+        }
+
     }
 }
