@@ -28,6 +28,8 @@ public class movement : MonoBehaviour
     public AudioSource jumpSound;
     public AudioSource walkSound;
 
+    public Animator anim;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -35,7 +37,7 @@ public class movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        canJump= false;
+        canJump = false;
     }
 
     // Update is called once per frame
@@ -43,9 +45,13 @@ public class movement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         if (horizontal != 0)
+        {
             walkSound.volume = 1;
+        }
         else
+        {
             walkSound.volume = 0;
+        }
 
         //Debug.Log(x);
         
@@ -67,7 +73,6 @@ public class movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && canJump)
         {
             Jump();
-            jumpSound.Play();
         }
 
         if (Input.GetKeyUp(KeyCode.W) && rb.velocity.y > 0)
@@ -76,6 +81,7 @@ public class movement : MonoBehaviour
                 rb.velocity.x,
                 rb.velocity.y * 0.5f);
         }
+
     }
 
     private void Jump()
@@ -85,7 +91,8 @@ public class movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-       // if(isOnePlayer)
+        
+        // if(isOnePlayer)
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
         //rb.velocity += new Vector2(playerOneMovement.x, gravity * Time.fixedDeltaTime * Time.fixedDeltaTime);
 
@@ -97,10 +104,6 @@ public class movement : MonoBehaviour
         {
             Flip();
         }
-        // else
-        // rb.MovePosition(rb.position + playerTwoMovement * speed * Time.fixedDeltaTime);
-
-        
     }
 
     private void Flip()
@@ -114,5 +117,12 @@ public class movement : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(groundCheck.position, radius);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<Death>())
+        {
+        }
     }
 }
