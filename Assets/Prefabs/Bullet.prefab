@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -6271387754942971574}
   - component: {fileID: 5173283742127354617}
   - component: {fileID: -1120209967310718526}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 14.83778, y: 4.682678, z: 0.063266344}
-  m_LocalScale: {x: 2.3, y: 2.3, z: 2.3}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1463484992694650568}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 1463484992694650568}
   - component: {fileID: 7515263828528275053}
   - component: {fileID: 169577380411714431}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
