@@ -197,6 +197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inter: {fileID: 1821283841376810456}
   interactiveColliderSize: 0.5
+  PlayerID: 0
+  interactionButton: 101
 --- !u!1 &7713536734097232250
 GameObject:
   m_ObjectHideFlags: 0

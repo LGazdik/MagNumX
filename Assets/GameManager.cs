@@ -1,5 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +12,12 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
     }
+
+    public void Start()
+    {
+        
+    }
+
     public void Restart()
     {
         fader.FadeOn(SceneManager.GetActiveScene().buildIndex);

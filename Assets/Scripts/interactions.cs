@@ -4,10 +4,12 @@ public class interactions : MonoBehaviour
 {
     public Transform inter;
     public float interactiveColliderSize;
+    public int PlayerID;
+    public KeyCode interactionButton;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(interactionButton))
         {
             Interact();
         }
@@ -33,7 +35,6 @@ public class interactions : MonoBehaviour
             {
                 p.TelepActivate();
             }
-
         }
     }
 
