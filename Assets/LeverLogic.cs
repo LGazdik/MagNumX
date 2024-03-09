@@ -26,10 +26,10 @@ public class LeverLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Interact();
-        }
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+        //    Interact();
+        //}
         if (platform == null) return;
 
         if (isFlipped == true)

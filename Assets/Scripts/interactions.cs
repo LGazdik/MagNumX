@@ -21,7 +21,6 @@ public class interactions : MonoBehaviour
         Collider2D[] cols = Physics2D.OverlapCircleAll(transform.position, interactiveColliderSize);
         foreach (Collider2D col in cols)
         {
-            Debug.Log(col);
             if (col.GetComponent<InteractionTree>() is InteractionTree i)
             {
                 i.DestroyMe();
@@ -60,6 +59,10 @@ public class interactions : MonoBehaviour
 
             if (col.GetComponent<LeverLogic>() is LeverLogic l)
                 l.Interact();
+
+            Debug.Log(col);
+            if (col.GetComponent<Vor>() is Vor v)
+                v.Interact();
         }
     }
 

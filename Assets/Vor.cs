@@ -23,18 +23,14 @@ public class Vor : MonoBehaviour
         x = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
         if (isOnBoat)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                isLockedOnBoat = !isLockedOnBoat;
-                player.constraints = isLockedOnBoat ? RigidbodyConstraints2D.FreezeAll : RigidbodyConstraints2D.FreezeRotation;
-            }
+            //Interact();
 
-            if(isOnBoat && isLockedOnBoat)
+            if (isOnBoat && isLockedOnBoat)
             {
                 transform.position += new Vector3(x, 0, 0);
                 if (platform != null)
                 {
-                    if(!isMirrored)
+                    if (!isMirrored)
                     {
                         platform.position += new Vector3(x, 0, 0);
                     }
@@ -42,16 +38,18 @@ public class Vor : MonoBehaviour
                     {
                         platform.position -= new Vector3(x, 0, 0);
                     }
-
-
                 }
-
             }
-
         }
+    }
 
+    public void Interact()
+    {
+        Debug.Log("dari se");
+        if (!isOnBoat) return;
 
-
+        isLockedOnBoat = !isLockedOnBoat;
+        player.constraints = isLockedOnBoat ? RigidbodyConstraints2D.FreezeAll : RigidbodyConstraints2D.FreezeRotation;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
