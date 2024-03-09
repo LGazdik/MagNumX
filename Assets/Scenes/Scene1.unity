@@ -1178,7 +1178,7 @@ PrefabInstance:
       objectReference: {fileID: 1337232826}
     - target: {fileID: 6269680599346528062, guid: c48428318a0727940b091cde0df09ff2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6269680599346528062, guid: c48428318a0727940b091cde0df09ff2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1558,15 +1558,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2093459819784665468, guid: 15f0fd55946df984e94ca1d02adc739f, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.38679236
       objectReference: {fileID: 0}
     - target: {fileID: 2093459819784665468, guid: 15f0fd55946df984e94ca1d02adc739f, type: 3}
       propertyPath: m_Color.g
-      value: 0.68163836
+      value: 0.6872471
       objectReference: {fileID: 0}
     - target: {fileID: 2093459819784665468, guid: 15f0fd55946df984e94ca1d02adc739f, type: 3}
       propertyPath: m_Color.r
-      value: 0.5503144
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2856421509668180048, guid: 15f0fd55946df984e94ca1d02adc739f, type: 3}
       propertyPath: m_Name
@@ -1897,7 +1897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5614519595516800162, guid: bb32f0a6478c10743920a1f3b94ef023, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.08
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5614519595516800162, guid: bb32f0a6478c10743920a1f3b94ef023, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2059,11 +2059,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2093459819784665468, guid: 15f0fd55946df984e94ca1d02adc739f, type: 3}
       propertyPath: m_Color.g
-      value: 0.68163836
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2093459819784665468, guid: 15f0fd55946df984e94ca1d02adc739f, type: 3}
       propertyPath: m_Color.r
-      value: 0.5503144
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2856421509668180048, guid: 15f0fd55946df984e94ca1d02adc739f, type: 3}
       propertyPath: m_Name
@@ -2681,7 +2681,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.7
+  m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000
