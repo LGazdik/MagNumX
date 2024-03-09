@@ -8,6 +8,8 @@ public class Portal : MonoBehaviour
     public CapsuleCollider2D col;
     public bool portalActivated = false;
 
+    private AudioSource sound;
+
     public static List<Portal> portals = new();
 
     private void Start()
@@ -18,6 +20,8 @@ public class Portal : MonoBehaviour
             Debug.LogWarning(p);
         }
         Portal.ActivatedPortal += CatchPortalSignals;
+
+        sound = GetComponent<AudioSource>();
     }
 
     public void TelepActivate()
@@ -31,6 +35,7 @@ public class Portal : MonoBehaviour
         {
             portalActivated = true;
             ActivatedPortal?.Invoke();
+            sound.Play();
         }
     }
 

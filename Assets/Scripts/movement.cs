@@ -25,6 +25,8 @@ public class movement : MonoBehaviour
     [SerializeField] private float radius = .05f;
     [SerializeField] private LayerMask mask;
 
+    public AudioSource jumpSound;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -59,9 +61,8 @@ public class movement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W) && canJump)
         {
-            
             Jump();
-
+            jumpSound.Play();
         }
 
         if (Input.GetKeyUp(KeyCode.W) && rb.velocity.y > 0)
@@ -76,9 +77,6 @@ public class movement : MonoBehaviour
     private void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-
-        
-
     }
 
     private void FixedUpdate()
