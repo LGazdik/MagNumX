@@ -67,6 +67,7 @@ public class movement : MonoBehaviour
             canJump = false;
         }
         
+        anim.SetBool("hasLanded", canJump);
 
         //Debug.Log(canJump);
 
@@ -87,6 +88,7 @@ public class movement : MonoBehaviour
     private void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        anim.SetTrigger("Jump");
     }
 
     private void FixedUpdate()
@@ -94,6 +96,7 @@ public class movement : MonoBehaviour
         
         // if(isOnePlayer)
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        anim.SetBool("isWalking", Mathf.Abs(rb.velocity.x) > 0 && GetComponent<Rigidbody2D>().constraints == RigidbodyConstraints2D.FreezeRotation);
         //rb.velocity += new Vector2(playerOneMovement.x, gravity * Time.fixedDeltaTime * Time.fixedDeltaTime);
 
         if(horizontal < 0 && isFacingRight)
@@ -123,6 +126,7 @@ public class movement : MonoBehaviour
     {
         if (collision.GetComponent<Death>())
         {
+            anim.SetTrigger("Death");
         }
     }
 }

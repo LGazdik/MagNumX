@@ -11,6 +11,7 @@ public class Vor : MonoBehaviour
     public bool isMirrored = false;
     [SerializeField] private Transform platform;
     float x;
+    [SerializeField] float xLimit;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +28,11 @@ public class Vor : MonoBehaviour
 
             if (isOnBoat && isLockedOnBoat)
             {
-                transform.position += new Vector3(x, 0, 0);
+                if(transform.position.x  + 0.3f < xLimit)
+                {
+                     transform.position += new Vector3(x, 0, 0);
+
+                }
                 if (platform != null)
                 {
                     if (!isMirrored)
