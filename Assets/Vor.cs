@@ -8,6 +8,8 @@ public class Vor : MonoBehaviour
     [SerializeField] Rigidbody2D player;
     private bool isLockedOnBoat = false;
     bool isOnBoat = false;
+    public bool isMirrored = false;
+    [SerializeField] private Transform platform;
     float x;
     // Start is called before the first frame update
     void Start()
@@ -28,7 +30,23 @@ public class Vor : MonoBehaviour
             }
 
             if(isOnBoat && isLockedOnBoat)
+            {
                 transform.position += new Vector3(x, 0, 0);
+                if (platform != null)
+                {
+                    if(!isMirrored)
+                    {
+                        platform.position += new Vector3(x, 0, 0);
+                    }
+                    if (isMirrored)
+                    {
+                        platform.position -= new Vector3(x, 0, 0);
+                    }
+
+
+                }
+
+            }
 
         }
 
