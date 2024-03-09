@@ -31,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472872541480699224}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.92, y: -3.29, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -26.08, y: -3.29, z: 0}
   m_LocalScale: {x: -1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -133,8 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inter: {fileID: 1821283841376810456}
   interactiveColliderSize: 0.5
-  PlayerID: 0
-  interactionButton: 48
+  interactionButton: 256
 --- !u!70 &8006586701122009577
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -441,7 +440,7 @@ Transform:
   m_GameObject: {fileID: 7724728445152256053}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11, y: -1.55, z: 0}
+  m_LocalPosition: {x: -0.01, y: -1.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

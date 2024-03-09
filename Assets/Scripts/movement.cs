@@ -43,13 +43,9 @@ public class movement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         if (horizontal != 0)
-        {
             walkSound.volume = 1;
-        }
         else
-        {
             walkSound.volume = 0;
-        }
 
         //Debug.Log(x);
         

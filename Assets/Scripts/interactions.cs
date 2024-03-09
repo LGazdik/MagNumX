@@ -4,7 +4,6 @@ public class interactions : MonoBehaviour
 {
     public Transform inter;
     public float interactiveColliderSize;
-    public int PlayerID;
     public KeyCode interactionButton;
 
     private bool inPortal = false;
