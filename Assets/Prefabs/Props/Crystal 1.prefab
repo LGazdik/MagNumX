@@ -48,7 +48,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.42452818, b: 0.8781356, a: 1}
+  m_Color: {r: 1, g: 0.54402506, b: 0.9038419, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 8661209249853541285}
   - component: {fileID: 8661415709042646578}
   m_Layer: 0
-  m_Name: CrystalProp
+  m_Name: Crystal 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,7 +108,7 @@ Transform:
   m_GameObject: {fileID: 2582170255694868815}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.78, y: 2.48, z: 0}
+  m_LocalPosition: {x: -15.755221, y: 2.5126057, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
