@@ -7,6 +7,8 @@ public class interactions : MonoBehaviour
     public int PlayerID;
     public KeyCode interactionButton;
 
+    private bool inPortal = false;
+
     void Update()
     {
         if (Input.GetKeyDown(interactionButton))
@@ -34,6 +36,27 @@ public class interactions : MonoBehaviour
             if (col.GetComponent<Portal>() is Portal p)
             {
                 p.TelepActivate();
+
+                if (inPortal == false)
+                {
+                    inPortal = true;
+                    if (p != null && p.portalActivated)
+                    {
+                        if (GetComponent<Rigidbody2D>() is Rigidbody2D r)
+                            r.constraints = RigidbodyConstraints2D.FreezePosition;
+                        GetComponent<SpriteRenderer>().enabled = false;
+                    }
+                }
+                else
+                {
+                    inPortal = false;
+                    if (p != null && !p.portalActivated)
+                    {
+                        if (GetComponent<Rigidbody2D>() is Rigidbody2D r)
+                            r.constraints = RigidbodyConstraints2D.FreezeRotation;
+                        GetComponent<SpriteRenderer>().enabled = true;
+                    }
+                }
             }
         }
     }
