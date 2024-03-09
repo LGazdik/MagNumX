@@ -21,16 +21,19 @@ public class interactions : MonoBehaviour
         foreach (Collider2D col in cols)
         {
             Debug.Log(col);
-            if (col.GetComponent<InteractionTree>() != null)
+            if (col.GetComponent<InteractionTree>() is InteractionTree i)
             {
-                var obj = col.GetComponent<InteractionTree>();
-                obj.DestroyMe();
+                i.DestroyMe();
             }
 
-            if (col.GetComponent<AnimObject>() != null)
+            if (col.GetComponent<AnimObject>() is AnimObject a)
             {
-                var obj = col.GetComponent<AnimObject>();
-                obj.PlayMe();
+                a.PlayMe();
+            }
+
+            if (col.GetComponent<Portal>() is Portal p)
+            {
+                p.TelepActivate();
             }
 
         }
