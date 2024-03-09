@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Vor : MonoBehaviour
 {
+    [SerializeField] bool isDownPlayer = false;
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] Rigidbody2D player;
     private bool isLockedOnBoat = false;
@@ -21,7 +22,10 @@ public class Vor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        x = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+        if(!isDownPlayer)
+            x = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+        if (isDownPlayer)
+            x = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
         if (isOnBoat)
         {
             //Interact();
@@ -30,6 +34,7 @@ public class Vor : MonoBehaviour
             {
                 if(transform.position.x  + 0.3f < xLimit)
                 {
+                    Debug.Log("je mensi");
                      transform.position += new Vector3(x, 0, 0);
 
                 }

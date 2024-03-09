@@ -27,7 +27,7 @@ public class turret : MonoBehaviour
     private void Fire()
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        bullet.GetComponent<Rigidbody2D>().AddForce(Vector2.left * bulletForce, ForceMode2D.Impulse);
+        bullet.GetComponent<Rigidbody2D>().AddForce(-transform.right * bulletForce, ForceMode2D.Impulse);
 
 
     }
