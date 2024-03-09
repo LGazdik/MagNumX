@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6973896965644544951}
   - component: {fileID: 6959901327897739934}
   - component: {fileID: 8006586701122009577}
+  - component: {fileID: 6218638221734708864}
   m_Layer: 0
   m_Name: PlayerDOWN
   m_TagString: Untagged
@@ -29,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 472872541480699224}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.46, y: 0.42, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.92, y: -3.29, z: 0}
+  m_LocalScale: {x: -1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5575418323181936675}
@@ -52,7 +53,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3.13
+  m_GravityScale: -3.13
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -130,8 +131,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inter: {fileID: 1821283841376810456}
   interactiveColliderSize: 0.5
-  world: {fileID: 0}
-  FlipWorldKey: 303
 --- !u!70 &8006586701122009577
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -167,6 +166,27 @@ CapsuleCollider2D:
   m_Offset: {x: -0, y: 0.005056739}
   m_Size: {x: 0.78834176, y: 3.0634935}
   m_Direction: 0
+--- !u!114 &6218638221734708864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472872541480699224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b276a5e8f3694c4783ff3b333540c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 0}
+  speed: 5
+  isOnePlayer: 0
+  jumpForce: -15
+  groundCheck: {fileID: 5575418323181936675}
+  radius: 0.3
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &7713536734097232250
 GameObject:
   m_ObjectHideFlags: 0

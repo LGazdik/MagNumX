@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class movement2 : MonoBehaviour
 {
+    public CameraScript mainCam;
+
     private Rigidbody2D rb;
 
     //private Vector2 playerTwoMovement;
@@ -63,7 +65,6 @@ public class movement2 : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.UpArrow) && rb.velocity.y > 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-
         }
 
     }

@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
+    public CameraScript mainCam;
 
     private Rigidbody2D rb;
     
@@ -65,8 +66,9 @@ public class movement : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.W) && rb.velocity.y > 0)
         {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-
+            rb.velocity = new Vector2(
+                rb.velocity.x,
+                rb.velocity.y * 0.5f);
         }
        
     }
