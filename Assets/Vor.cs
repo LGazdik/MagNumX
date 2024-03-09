@@ -12,7 +12,8 @@ public class Vor : MonoBehaviour
     public bool isMirrored = false;
     [SerializeField] private Transform platform;
     float x;
-    [SerializeField] float xLimit;
+    [SerializeField] float xLimit; 
+    [SerializeField] float xMinusLimit = -100f;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +36,12 @@ public class Vor : MonoBehaviour
                 if(transform.position.x > xLimit)
                 {
                     transform.position = new Vector3(xLimit, transform.position.y, transform.position.z);
+                    Debug.Log("je mensi");
+
+                }
+                if (transform.position.x < xMinusLimit)
+                {
+                    transform.position = new Vector3(xMinusLimit, transform.position.y, transform.position.z);
                     Debug.Log("je mensi");
 
                 }
