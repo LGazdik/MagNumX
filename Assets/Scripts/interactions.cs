@@ -1,17 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class interactions : MonoBehaviour
 {
     public Transform inter;
     public float interactiveColliderSize;
+    public World world;
+    public KeyCode FlipWorldKey;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
             Interact();
+        }
+
+        if (Input.GetKeyUp(FlipWorldKey))
+        {
+            world.FlipWorld();
         }
     }
 

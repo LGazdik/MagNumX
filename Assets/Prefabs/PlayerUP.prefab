@@ -195,8 +195,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inter: {fileID: 1821283841376810456}
-  anim: {fileID: 0}
   interactiveColliderSize: 0.5
+  world: {fileID: 0}
+  FlipWorldKey: 304
 --- !u!1 &7713536734097232250
 GameObject:
   m_ObjectHideFlags: 0
