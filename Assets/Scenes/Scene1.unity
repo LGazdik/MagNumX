@@ -2498,6 +2498,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.0045731743
       objectReference: {fileID: 0}
+    - target: {fileID: 6959901327897739934, guid: d114293b4b3f3354788d705c3e1d73d5, type: 3}
+      propertyPath: interactionButton
+      value: 305
+      objectReference: {fileID: 0}
     - target: {fileID: 7441047029002832071, guid: d114293b4b3f3354788d705c3e1d73d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.65528
