@@ -43,6 +43,10 @@ public class interactions : MonoBehaviour
                     {
                         if (GetComponent<Rigidbody2D>() is Rigidbody2D r)
                             r.constraints = RigidbodyConstraints2D.FreezePosition;
+
+                        if (GetComponent<CapsuleCollider2D>() is CapsuleCollider2D c)
+                            c.enabled = false;
+
                         var spr = GetComponentsInChildren<SpriteRenderer>().ToList();
                         spr.ForEach(x => x.enabled = false);
                     }
@@ -54,6 +58,10 @@ public class interactions : MonoBehaviour
                     {
                         if (GetComponent<Rigidbody2D>() is Rigidbody2D r)
                             r.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+                        if (GetComponent<CapsuleCollider2D>() is CapsuleCollider2D c)
+                            c.enabled = true;
+
                         var spr = GetComponentsInChildren<SpriteRenderer>().ToList();
                         spr.ForEach(x => x.enabled = true);
                     }
