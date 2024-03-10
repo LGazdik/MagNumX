@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 873f58a6294d79f44b99f94728d0ea20
+guid: c9003734f58f8e640a9a53cbb919e33b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Barrels_0
+      name: barrel_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62fad4c52dd3d4a4b966e9838603eb49
-      internalID: -1404307133
+      spriteID: ddbb324f6dc715a4f86d4c289e387051
+      internalID: 1689106005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_1
+      name: barrel_1
       rect:
         serializedVersion: 2
         x: 400
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98dd5c0a91995f745abf019845024f6d
-      internalID: 48316625
+      spriteID: 5800c2b156ddb0743a72dd709efb6f4d
+      internalID: 2070975074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_2
+      name: barrel_2
       rect:
         serializedVersion: 2
         x: 800
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 952a0a711f102904cacd42613061fdd3
-      internalID: -2084853973
+      spriteID: db20e6286fe371940b2e7cd2d6b7cf07
+      internalID: -1923781350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_3
+      name: barrel_3
       rect:
         serializedVersion: 2
         x: 1200
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 128048efca343a84ba929fdf943acc8a
-      internalID: 1870787879
+      spriteID: 1c4681b21308da540ab9b4d6595318a7
+      internalID: 1324449897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_4
+      name: barrel_4
       rect:
         serializedVersion: 2
         x: 1600
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e55d461a8ddcfc949b34576f6476d261
-      internalID: 974908661
+      spriteID: d3db9e70405fb0f49b2eacfae74a3cc1
+      internalID: -1420433218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_5
+      name: barrel_5
       rect:
         serializedVersion: 2
         x: 0
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8aaac909511450488a3cc0e47ca1f45
-      internalID: 962317919
+      spriteID: 840b3fd0c19d1fc4a9ac3e24b0b41741
+      internalID: -1103543635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_6
+      name: barrel_6
       rect:
         serializedVersion: 2
         x: 400
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54c1edee48427394ab32b2922b64737f
-      internalID: -231074419
+      spriteID: 0a9e56e60ea0c704ca4d9d41daa3004e
+      internalID: -81343023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_7
+      name: barrel_7
       rect:
         serializedVersion: 2
         x: 800
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 401002f0beae1ef4eb5436f0e5506154
-      internalID: -979129001
+      spriteID: 30548378c81ccb1498d7cf5e41cf0db1
+      internalID: 2048357882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_8
+      name: barrel_8
       rect:
         serializedVersion: 2
         x: 1200
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08c1d963c86378e4e94543a1f667a5f0
-      internalID: -1675256971
+      spriteID: fb918e2b8982ee2408c9daf59f7ffaa9
+      internalID: 815979162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_9
+      name: barrel_9
       rect:
         serializedVersion: 2
         x: 1600
@@ -313,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7539c429bd694b3439b2c0a7704d16e7
-      internalID: -1544675840
+      spriteID: 96c2e575dab297b488706976f68ca49f
+      internalID: 1933988671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_10
+      name: barrel_10
       rect:
         serializedVersion: 2
         x: 0
@@ -334,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a780c93691083443aa94fe4cbfedab3
-      internalID: -1449470267
+      spriteID: 08d251bc060b7524682c7e15249f0e1a
+      internalID: 1821456876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_11
+      name: barrel_11
       rect:
         serializedVersion: 2
         x: 400
@@ -355,14 +355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4187795c372736a439af1301b62a700e
-      internalID: 1977069139
+      spriteID: 7da886ee6a61d2d449ee0807457424a5
+      internalID: 828258957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_12
+      name: barrel_12
       rect:
         serializedVersion: 2
         x: 800
@@ -376,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d18a4c8cf3364e4da665b99731d07ad
-      internalID: -290636125
+      spriteID: f58ae6082a7c98f4c95b0e8232a03ec2
+      internalID: -1847837426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_13
+      name: barrel_13
       rect:
         serializedVersion: 2
         x: 1200
@@ -397,14 +397,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fdcb70b8b18e0d47a4d264f1a9698d9
-      internalID: -46687791
+      spriteID: 80de5eddc72c11b4a8c0aa405deb2b47
+      internalID: 1854051555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_14
+      name: barrel_14
       rect:
         serializedVersion: 2
         x: 1600
@@ -418,14 +418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13a1b56279e61e147913aa61e1d52696
-      internalID: -1732288273
+      spriteID: f68017ec8fce1134faaddc99d2eb8707
+      internalID: 2049833309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_15
+      name: barrel_15
       rect:
         serializedVersion: 2
         x: 0
@@ -439,14 +439,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cd40b5cccd85e54483510902365fccc
-      internalID: -276093155
+      spriteID: 7cb270a0eb3baa94f90169b6f4a78a3d
+      internalID: -404622167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_16
+      name: barrel_16
       rect:
         serializedVersion: 2
         x: 400
@@ -460,14 +460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e975c7bafcfc1c4e9590ec06e8e9563
-      internalID: -1239553804
+      spriteID: 03a3616321d008943b07cc3abae31c8e
+      internalID: 363543454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barrels_17
+      name: barrel_17
       rect:
         serializedVersion: 2
         x: 800
@@ -481,8 +481,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e80493d70d212d84a816017269bb7377
-      internalID: -849654462
+      spriteID: bb8e55114ba1a774e8e51849406f2e40
+      internalID: -1477686711
       vertices: []
       indices: 
       edges: []
@@ -498,24 +498,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Barrels_0: -1404307133
-      Barrels_1: 48316625
-      Barrels_10: -1449470267
-      Barrels_11: 1977069139
-      Barrels_12: -290636125
-      Barrels_13: -46687791
-      Barrels_14: -1732288273
-      Barrels_15: -276093155
-      Barrels_16: -1239553804
-      Barrels_17: -849654462
-      Barrels_2: -2084853973
-      Barrels_3: 1870787879
-      Barrels_4: 974908661
-      Barrels_5: 962317919
-      Barrels_6: -231074419
-      Barrels_7: -979129001
-      Barrels_8: -1675256971
-      Barrels_9: -1544675840
+      barrel_0: 1689106005
+      barrel_1: 2070975074
+      barrel_10: 1821456876
+      barrel_11: 828258957
+      barrel_12: -1847837426
+      barrel_13: 1854051555
+      barrel_14: 2049833309
+      barrel_15: -404622167
+      barrel_16: 363543454
+      barrel_17: -1477686711
+      barrel_2: -1923781350
+      barrel_3: 1324449897
+      barrel_4: -1420433218
+      barrel_5: -1103543635
+      barrel_6: -81343023
+      barrel_7: 2048357882
+      barrel_8: 815979162
+      barrel_9: 1933988671
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
