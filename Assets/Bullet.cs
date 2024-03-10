@@ -25,8 +25,14 @@ public class Bullet : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
         {
             GameManager.Instance.Restart();
+            movement jo = collision.gameObject.GetComponent<movement>();
+            if (jo != null)
+            {
+                jo.Die();
+                Debug.Log("We aredead");
+            }
         }
-        Destroy(gameObject);
+            Destroy(gameObject);
 
     }
 }

@@ -9,6 +9,7 @@ public class movement : MonoBehaviour
     public CameraScript mainCam;
 
     private Rigidbody2D rb;
+    bool hasDied = false;
     
     //private Vector2 playerTwoMovement;
     private bool isFacingRight = true;
@@ -126,7 +127,18 @@ public class movement : MonoBehaviour
     {
         if (collision.GetComponent<Death>())
         {
-            anim.SetTrigger("Death");
+            Die();
         }
     }
+
+    public void Die()
+    {
+        if (!hasDied)
+        {
+         anim.SetTrigger("Death");
+            hasDied = true;
+        }
+    }
+
+    
 }
