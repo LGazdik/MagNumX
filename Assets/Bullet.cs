@@ -34,7 +34,7 @@ public class Bullet : MonoBehaviour
                 Debug.Log("We aredead");
             }
         }
-        Destroy(gameObject,0.5f);
+        Destroy(gameObject/*,0.5f*/);
 
     }
 }
