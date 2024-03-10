@@ -32,11 +32,13 @@ public class LeverSwitch : MonoBehaviour
         if (!isFlipped)
         {
             NotifyLeverSwitchActivated?.Invoke();
+            leverTransform.Rotate(Vector3.forward, -90);
             isFlipped = !isFlipped;
         }
         else
         {
             NotifyLeverSwitchDeActivated?.Invoke();
+            leverTransform.Rotate(Vector3.forward, 90);
             isFlipped = !isFlipped;
         }
     }
