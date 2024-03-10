@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b01544a2373e6d34299010e8a77c97e5
+guid: d826eaf3222cc51428785ffd0f4d7be4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: drone_0
+      name: DroneReworked_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c36198ca58322f4c8182048c65879e6
-      internalID: -1036882947
+      spriteID: 65d747c67424cf8448f00458bbc520bd
+      internalID: -1404141194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_1
+      name: DroneReworked_1
       rect:
         serializedVersion: 2
         x: 400
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35691491f17443742bf817d0aee920a1
-      internalID: -753485544
+      spriteID: a8360d46f9048e142b8f0d3472570662
+      internalID: -1813296152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_2
+      name: DroneReworked_2
       rect:
         serializedVersion: 2
         x: 800
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bf7bed23e9899d4e9a04ebb6929dc7a
-      internalID: 1406298307
+      spriteID: c20fdc10f50ecee4d90d20c0c621a6ed
+      internalID: -1698626754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_3
+      name: DroneReworked_3
       rect:
         serializedVersion: 2
         x: 1200
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61b89f0e2f713ce49a46ee7c41bfb323
-      internalID: 561794501
+      spriteID: cdad7295d68df8841b1f432206c75980
+      internalID: -1535208916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_4
+      name: DroneReworked_4
       rect:
         serializedVersion: 2
         x: 1600
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79aec37435a7d9d4fbe10f2b5c781f20
-      internalID: 804271934
+      spriteID: 0bd5db01ea63f88459192bce99309656
+      internalID: 2110525998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_5
+      name: DroneReworked_5
       rect:
         serializedVersion: 2
         x: 0
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84c2b7c6610a4c043bed4bed17c5f1b1
-      internalID: -366029856
+      spriteID: a3cee2a05b7f9224a9b1d5eedd457170
+      internalID: -2004087856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_6
+      name: DroneReworked_6
       rect:
         serializedVersion: 2
         x: 400
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64a3501777c6f8c4f8e3ebf4b6d39b5c
-      internalID: 2146348233
+      spriteID: c09699718f4d0294e860a8964ca9eae3
+      internalID: 1398179862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_7
+      name: DroneReworked_7
       rect:
         serializedVersion: 2
         x: 800
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 498f2537bc43a7347b4e7c7adafded8e
-      internalID: 2088189961
+      spriteID: 6987ad4eb96c8934b8fb29d66719f1a2
+      internalID: -759593548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_8
+      name: DroneReworked_8
       rect:
         serializedVersion: 2
         x: 1200
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cafd3b1089d3ebc41aa6fcba583150ea
-      internalID: 1659051508
+      spriteID: c40c61fcd7606764faeedb5efd1758fd
+      internalID: -1025664827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_9
+      name: DroneReworked_9
       rect:
         serializedVersion: 2
         x: 1600
@@ -313,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 105d04836e90dc6418447a1f814e1334
-      internalID: -163852658
+      spriteID: 54800261288510f41b3114c447c0e0b9
+      internalID: -111406614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_10
+      name: DroneReworked_10
       rect:
         serializedVersion: 2
         x: 0
@@ -334,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17e57fe1288270643baad9050b97e94d
-      internalID: -1916802000
+      spriteID: 118358fa34513cc47a1c96bd8aac7cc2
+      internalID: -1498648187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_11
+      name: DroneReworked_11
       rect:
         serializedVersion: 2
         x: 400
@@ -355,14 +355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 610808296ed34284a8b5feb922b98517
-      internalID: -365930296
+      spriteID: 2b6f52792c6a3f3409db9f1c9d5d4d6f
+      internalID: 2102398337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_12
+      name: DroneReworked_12
       rect:
         serializedVersion: 2
         x: 800
@@ -376,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56d5c514d15e50a4dac7f080e2246a9a
-      internalID: 637768707
+      spriteID: 905e73731aa5bad4192046f21d1d0c14
+      internalID: -2009493632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_13
+      name: DroneReworked_13
       rect:
         serializedVersion: 2
         x: 1200
@@ -397,14 +397,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75b5c19a0a344b341aa4901271af6968
-      internalID: -575978751
+      spriteID: e2f9d173b3466504091bdd7b11c372a8
+      internalID: 1115746132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_14
+      name: DroneReworked_14
       rect:
         serializedVersion: 2
         x: 1600
@@ -418,14 +418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc1d369e076a94749ae7f0b152f8ff04
-      internalID: -1162427657
+      spriteID: 4f2ff65526d9a4247ab1be3a9f081b78
+      internalID: -884180308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_15
+      name: DroneReworked_15
       rect:
         serializedVersion: 2
         x: 0
@@ -439,14 +439,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1f7b70ce4206ba4c86d85a2373bb3ea
-      internalID: 37747219
+      spriteID: d79b66007992c0842a42110dbbd6e922
+      internalID: 37550335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_16
+      name: DroneReworked_16
       rect:
         serializedVersion: 2
         x: 400
@@ -460,14 +460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 464b5dd50ff922548a3cf0e2584be68c
-      internalID: -1447984247
+      spriteID: 8c7ba3492f367824abd33b0942ccf47a
+      internalID: -579498580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_17
+      name: DroneReworked_17
       rect:
         serializedVersion: 2
         x: 800
@@ -481,14 +481,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df10b5dfe75f22d448250d35180d23c3
-      internalID: 1675809266
+      spriteID: 44973e302ee00cc4b9e01d236570ac36
+      internalID: 1185460887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_18
+      name: DroneReworked_18
       rect:
         serializedVersion: 2
         x: 1200
@@ -502,14 +502,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5674d79d399d64d4e945193f5025b7d8
-      internalID: 15906817
+      spriteID: 0c3ab63b579526d40bf415b1283e45d1
+      internalID: 1531385871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_19
+      name: DroneReworked_19
       rect:
         serializedVersion: 2
         x: 1600
@@ -523,14 +523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f2d5f89226362e42af1fa7021be577f
-      internalID: 58490627
+      spriteID: 3b334cfddf35bdd42a8121f3feb9968d
+      internalID: -976652497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_20
+      name: DroneReworked_20
       rect:
         serializedVersion: 2
         x: 0
@@ -544,14 +544,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91e70b5fe94695b4ba6ca9cf2c189edf
-      internalID: -2120445978
+      spriteID: 5eb97f3cad6f21c40bcc363289f447ee
+      internalID: 1812377947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_21
+      name: DroneReworked_21
       rect:
         serializedVersion: 2
         x: 400
@@ -565,14 +565,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddae3b9a0c1c02940976baf08ad2b34e
-      internalID: -403668839
+      spriteID: 67ad8f214d5513e4fa19d4282c9749be
+      internalID: 1317204075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_22
+      name: DroneReworked_22
       rect:
         serializedVersion: 2
         x: 800
@@ -586,14 +586,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30b4e5cb7a8af9d409328031c1042571
-      internalID: -829420724
+      spriteID: f6602d622ea6b59448e4c5050153fc9b
+      internalID: 91774373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_23
+      name: DroneReworked_23
       rect:
         serializedVersion: 2
         x: 1200
@@ -607,14 +607,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9eb98e4c4bc8b484ea087b1d9273153e
-      internalID: 1148338382
+      spriteID: 33274e9942b52394daeeef76686597bc
+      internalID: -406098444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drone_24
+      name: DroneReworked_24
       rect:
         serializedVersion: 2
         x: 1600
@@ -628,8 +628,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 289c6afb7d8bba6409abf9d4f7094fce
-      internalID: -1220631206
+      spriteID: bd52bc0fd8256724ea481bf4ccb35e8c
+      internalID: -1581192776
       vertices: []
       indices: 
       edges: []
@@ -645,31 +645,31 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      drone_0: -1036882947
-      drone_1: -753485544
-      drone_10: -1916802000
-      drone_11: -365930296
-      drone_12: 637768707
-      drone_13: -575978751
-      drone_14: -1162427657
-      drone_15: 37747219
-      drone_16: -1447984247
-      drone_17: 1675809266
-      drone_18: 15906817
-      drone_19: 58490627
-      drone_2: 1406298307
-      drone_20: -2120445978
-      drone_21: -403668839
-      drone_22: -829420724
-      drone_23: 1148338382
-      drone_24: -1220631206
-      drone_3: 561794501
-      drone_4: 804271934
-      drone_5: -366029856
-      drone_6: 2146348233
-      drone_7: 2088189961
-      drone_8: 1659051508
-      drone_9: -163852658
+      DroneReworked_0: -1404141194
+      DroneReworked_1: -1813296152
+      DroneReworked_10: -1498648187
+      DroneReworked_11: 2102398337
+      DroneReworked_12: -2009493632
+      DroneReworked_13: 1115746132
+      DroneReworked_14: -884180308
+      DroneReworked_15: 37550335
+      DroneReworked_16: -579498580
+      DroneReworked_17: 1185460887
+      DroneReworked_18: 1531385871
+      DroneReworked_19: -976652497
+      DroneReworked_2: -1698626754
+      DroneReworked_20: 1812377947
+      DroneReworked_21: 1317204075
+      DroneReworked_22: 91774373
+      DroneReworked_23: -406098444
+      DroneReworked_24: -1581192776
+      DroneReworked_3: -1535208916
+      DroneReworked_4: 2110525998
+      DroneReworked_5: -2004087856
+      DroneReworked_6: 1398179862
+      DroneReworked_7: -759593548
+      DroneReworked_8: -1025664827
+      DroneReworked_9: -111406614
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
