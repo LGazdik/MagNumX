@@ -12,6 +12,7 @@ public class movement2 : MonoBehaviour
     [SerializeField] private bool isOnePlayer = false;
 
     private bool canJump = false;
+    bool hasDied = false;
 
     float horizontal;
 
@@ -24,8 +25,11 @@ public class movement2 : MonoBehaviour
     public AudioSource jumpSound;
     public AudioSource walkSound;
 
+    public Animator anim;
+
     private void Awake()
     {
+        anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
     // Start is called before the first frame update
@@ -57,6 +61,8 @@ public class movement2 : MonoBehaviour
             canJump = false;
         }
 
+        anim.SetBool("hasLanded", canJump);
+
 
         //Debug.Log(canJump);
 
@@ -75,12 +81,14 @@ public class movement2 : MonoBehaviour
     private void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        anim.SetTrigger("Jump");
     }
 
     private void FixedUpdate()
     {
         // if(isOnePlayer)
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        anim.SetBool("isWalking", Mathf.Abs(rb.velocity.x) > 0 && GetComponent<Rigidbody2D>().constraints == RigidbodyConstraints2D.FreezeRotation);
         //rb.velocity += new Vector2(playerOneMovement.x, gravity * Time.fixedDeltaTime * Time.fixedDeltaTime);
 
         if (horizontal < 0 && isFacingRight)
@@ -108,5 +116,21 @@ public class movement2 : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(groundCheck.position, radius);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<Death>())
+        {
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        if (!hasDied)
+        {
+            anim.SetTrigger("Death");
+            hasDied = true;
+        }
     }
 }
