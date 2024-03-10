@@ -140,7 +140,7 @@ MonoBehaviour:
     m_Bits: 64
   jumpSound: {fileID: 430368055027205861}
   walkSound: {fileID: 5049991330533217925}
-  anim: {fileID: 0}
+  anim: {fileID: 5677891236441008853}
 --- !u!82 &430368055027205861
 AudioSource:
   m_ObjectHideFlags: 0
@@ -542,7 +542,7 @@ PrefabInstance:
     - target: {fileID: 7221561308541621398, guid: 0842986453feffc4e9dbea35637f5786, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1a0b16df55a340b4d87e3a694b6eb2f5, type: 2}
+      objectReference: {fileID: 9100000, guid: d6571a43de108304e89697596391023b, type: 2}
     - target: {fileID: 7547712183002722849, guid: 0842986453feffc4e9dbea35637f5786, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.99989307
@@ -560,6 +560,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0842986453feffc4e9dbea35637f5786, type: 3}
+--- !u!95 &5677891236441008853 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7221561308541621398, guid: 0842986453feffc4e9dbea35637f5786, type: 3}
+  m_PrefabInstance: {fileID: 3095037548453084739}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6978287627983404577 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5342416913118953570, guid: 0842986453feffc4e9dbea35637f5786, type: 3}
