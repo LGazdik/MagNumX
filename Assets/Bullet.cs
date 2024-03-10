@@ -21,6 +21,8 @@ public class Bullet : MonoBehaviour
     {
         GameObject boom = Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(boom, 2f);
+        AudioSource ac = GetComponent<AudioSource>();
+        ac.Play();
 
         if (collision.collider.CompareTag("Player"))
         {
@@ -32,7 +34,7 @@ public class Bullet : MonoBehaviour
                 Debug.Log("We aredead");
             }
         }
-            Destroy(gameObject);
+        Destroy(gameObject,0.5f);
 
     }
 }
