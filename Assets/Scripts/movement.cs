@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEditor.Tilemaps;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class movement : MonoBehaviour
 {
@@ -10,16 +7,16 @@ public class movement : MonoBehaviour
 
     private Rigidbody2D rb;
     bool hasDied = false;
-    
+
     //private Vector2 playerTwoMovement;
     private bool isFacingRight = true;
     [SerializeField] float speed = 5f;
-    [SerializeField]private bool isOnePlayer = false;
+    [SerializeField] private bool isOnePlayer = false;
 
     private bool canJump = false;
 
     float horizontal;
-    
+
     [SerializeField] float jumpForce = 2f;
 
     [SerializeField] private Transform groundCheck;
@@ -55,10 +52,10 @@ public class movement : MonoBehaviour
         }
 
         //Debug.Log(x);
-        
 
-        Collider2D[] col = Physics2D.OverlapCircleAll(groundCheck.position, radius , mask);
-        if(col.Length > 0)
+
+        Collider2D[] col = Physics2D.OverlapCircleAll(groundCheck.position, radius, mask);
+        if (col.Length > 0)
         {
             canJump = true;
 
@@ -67,7 +64,7 @@ public class movement : MonoBehaviour
         {
             canJump = false;
         }
-        
+
         anim.SetBool("hasLanded", canJump);
 
         //Debug.Log(canJump);
@@ -94,13 +91,13 @@ public class movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+
         // if(isOnePlayer)
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
         anim.SetBool("isWalking", Mathf.Abs(rb.velocity.x) > 0 && GetComponent<Rigidbody2D>().constraints == RigidbodyConstraints2D.FreezeRotation);
         //rb.velocity += new Vector2(playerOneMovement.x, gravity * Time.fixedDeltaTime * Time.fixedDeltaTime);
 
-        if(horizontal < 0 && isFacingRight)
+        if (horizontal < 0 && isFacingRight)
         {
             Flip();
         }
@@ -135,10 +132,10 @@ public class movement : MonoBehaviour
     {
         if (!hasDied)
         {
-         anim.SetTrigger("Death");
+            anim.SetTrigger("Death");
             hasDied = true;
         }
     }
 
-    
+
 }
