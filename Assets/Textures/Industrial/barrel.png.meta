@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 932b9e2fe0669bb4b935e4ccb8fdab94
+guid: 7e5f7ccd08ccff54f8d078c4011628eb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barrel_0
+      name: BarrelsReworked_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a8fada54716bea448029c6210c7e91a
-      internalID: -948340874
+      spriteID: ba9248d1b325638459898af31fb2e872
+      internalID: -678900692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_1
+      name: BarrelsReworked_1
       rect:
         serializedVersion: 2
         x: 400
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 281f5812090fbb54a9c1c5586a04a482
-      internalID: -669531490
+      spriteID: c557358db3a0f5a4eb3e70657b6f8c11
+      internalID: -216839770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_2
+      name: BarrelsReworked_2
       rect:
         serializedVersion: 2
         x: 800
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4d94ce8a66a7734698c809d6a9eb134
-      internalID: -1025812819
+      spriteID: 70fce21a13037904298188d2c8e90b54
+      internalID: 373428796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_3
+      name: BarrelsReworked_3
       rect:
         serializedVersion: 2
         x: 1200
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89b1b47df9519ef43a6a13213c672142
-      internalID: -1888217797
+      spriteID: 14ace60ea59e2d141a329e8afdb94678
+      internalID: -1986635811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_4
+      name: BarrelsReworked_4
       rect:
         serializedVersion: 2
         x: 1600
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5331fa609093f1f4bb5ea5b0143fac6b
-      internalID: 1394201542
+      spriteID: 69d2981fd585b6b48a57e39af5a6d8d3
+      internalID: -1056975524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_5
+      name: BarrelsReworked_5
       rect:
         serializedVersion: 2
         x: 0
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8fb95e893bc4cd4490d64ec77e12a26
-      internalID: 1756737926
+      spriteID: 8924390b4252a89498b95c3586de139f
+      internalID: 913224649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_6
+      name: BarrelsReworked_6
       rect:
         serializedVersion: 2
         x: 400
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6713d847e085e84c82348e1c023cedb
-      internalID: 453277413
+      spriteID: 65b332928117a6d43a10ec60bd870cbc
+      internalID: 879298834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_7
+      name: BarrelsReworked_7
       rect:
         serializedVersion: 2
         x: 800
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 215ce05fcc0791741b92c18b300e815b
-      internalID: 1941980752
+      spriteID: 9c406fb7c468cf74e95d9ebf8387fef3
+      internalID: -668786745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_8
+      name: BarrelsReworked_8
       rect:
         serializedVersion: 2
         x: 1200
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4a1286e4616ddc43904916d4161414f
-      internalID: -1244913701
+      spriteID: bb721af162106b84685243fba8854ee5
+      internalID: 739661869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_9
+      name: BarrelsReworked_9
       rect:
         serializedVersion: 2
         x: 1600
@@ -313,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 404c319f10ce48b4384b1e3873968b9a
-      internalID: -613260995
+      spriteID: 70e0d5d81d653aa49a475b1b464f8c53
+      internalID: 445395915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_10
+      name: BarrelsReworked_10
       rect:
         serializedVersion: 2
         x: 0
@@ -334,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 568795ff2b6ceb3458ad4886f2f8e5b2
-      internalID: -199516315
+      spriteID: 560a39c908db0a743a6c350cc6bf7ac8
+      internalID: 1657983322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_11
+      name: BarrelsReworked_11
       rect:
         serializedVersion: 2
         x: 400
@@ -355,14 +355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0b9187127e4f034fa6f4bb8e03a7666
-      internalID: -71535836
+      spriteID: a3f487775bf5f82458ab0532119a44ba
+      internalID: 1065971991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_12
+      name: BarrelsReworked_12
       rect:
         serializedVersion: 2
         x: 800
@@ -376,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a8381bd77806144986dbe0388d78334
-      internalID: 557495610
+      spriteID: a67e5d1eb43e7f848b5bb51d8ef1f71c
+      internalID: -806931423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_13
+      name: BarrelsReworked_13
       rect:
         serializedVersion: 2
         x: 1200
@@ -397,14 +397,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0835dc9e1f1f29148937af97b118b7e3
-      internalID: 1020712698
+      spriteID: be20266e3d64bfe4d822cc28a3bdd57d
+      internalID: -1711565385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_14
+      name: BarrelsReworked_14
       rect:
         serializedVersion: 2
         x: 1600
@@ -418,14 +418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a3568584ed5aee47a69facd2cedcbae
-      internalID: -1633189720
+      spriteID: 969a2e6b4999bab42910be4d206e744a
+      internalID: 912028753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_15
+      name: BarrelsReworked_15
       rect:
         serializedVersion: 2
         x: 0
@@ -439,14 +439,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb1e29f22c237a546a4067781b82c1b8
-      internalID: -37660485
+      spriteID: d85e55e782e7ffc43b551970cf882c70
+      internalID: 319838810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_16
+      name: BarrelsReworked_16
       rect:
         serializedVersion: 2
         x: 400
@@ -460,14 +460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5d392d5d4e014942ad5aa58f8079b54
-      internalID: -6311167
+      spriteID: 6835012b13bc80d4ba0f30c46f4de877
+      internalID: 1222858254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: barrel_17
+      name: BarrelsReworked_17
       rect:
         serializedVersion: 2
         x: 800
@@ -481,8 +481,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26b5b36cf8ab1904aa021a7f70f170f3
-      internalID: -8482920
+      spriteID: 3ffdb2061c5c7a540bb6634834542006
+      internalID: 1673879957
       vertices: []
       indices: 
       edges: []
@@ -498,24 +498,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      barrel_0: -948340874
-      barrel_1: -669531490
-      barrel_10: -199516315
-      barrel_11: -71535836
-      barrel_12: 557495610
-      barrel_13: 1020712698
-      barrel_14: -1633189720
-      barrel_15: -37660485
-      barrel_16: -6311167
-      barrel_17: -8482920
-      barrel_2: -1025812819
-      barrel_3: -1888217797
-      barrel_4: 1394201542
-      barrel_5: 1756737926
-      barrel_6: 453277413
-      barrel_7: 1941980752
-      barrel_8: -1244913701
-      barrel_9: -613260995
+      BarrelsReworked_0: -678900692
+      BarrelsReworked_1: -216839770
+      BarrelsReworked_10: 1657983322
+      BarrelsReworked_11: 1065971991
+      BarrelsReworked_12: -806931423
+      BarrelsReworked_13: -1711565385
+      BarrelsReworked_14: 912028753
+      BarrelsReworked_15: 319838810
+      BarrelsReworked_16: 1222858254
+      BarrelsReworked_17: 1673879957
+      BarrelsReworked_2: 373428796
+      BarrelsReworked_3: -1986635811
+      BarrelsReworked_4: -1056975524
+      BarrelsReworked_5: 913224649
+      BarrelsReworked_6: 879298834
+      BarrelsReworked_7: -668786745
+      BarrelsReworked_8: 739661869
+      BarrelsReworked_9: 445395915
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
