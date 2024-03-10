@@ -3592,7 +3592,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4550446123588454508, guid: 111b5499f7d067e4db6879a4627b65e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.35
+      value: 4.43
       objectReference: {fileID: 0}
     - target: {fileID: 4550446123588454508, guid: 111b5499f7d067e4db6879a4627b65e5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5866,6 +5866,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 751359029644005101, guid: 0aa03621e577af84c8bc4339392fcaa8, type: 3}
+      propertyPath: switcher
+      value: 
+      objectReference: {fileID: 1427200925}
     - target: {fileID: 1409365276023499758, guid: 0aa03621e577af84c8bc4339392fcaa8, type: 3}
       propertyPath: m_Name
       value: DroneObj
@@ -5910,10 +5914,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7302858642555342127, guid: 0aa03621e577af84c8bc4339392fcaa8, type: 3}
-      propertyPath: switcher
-      value: 
-      objectReference: {fileID: 1427200925}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
