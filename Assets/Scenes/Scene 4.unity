@@ -8145,7 +8145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6959901327897739934, guid: 419d6c9af40d7d447b00d9fd3060c323, type: 3}
       propertyPath: interactionButton
-      value: 0
+      value: 101
       objectReference: {fileID: 0}
     - target: {fileID: 7196231962932015256, guid: 419d6c9af40d7d447b00d9fd3060c323, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8391,7 +8391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6959901327897739934, guid: d114293b4b3f3354788d705c3e1d73d5, type: 3}
       propertyPath: interactionButton
-      value: 0
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 7441047029002832071, guid: d114293b4b3f3354788d705c3e1d73d5, type: 3}
       propertyPath: m_LocalPosition.x
