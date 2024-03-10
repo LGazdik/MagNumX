@@ -1285,11 +1285,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!95 &873700677 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5677891236441008853, guid: d114293b4b3f3354788d705c3e1d73d5, type: 3}
-  m_PrefabInstance: {fileID: 1406803151}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &948881587
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,14 +3152,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerDOWN (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 5677891236441008853, guid: d114293b4b3f3354788d705c3e1d73d5, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: d6571a43de108304e89697596391023b, type: 2}
-    - target: {fileID: 6218638221734708864, guid: d114293b4b3f3354788d705c3e1d73d5, type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 873700677}
     - target: {fileID: 6218638221734708864, guid: d114293b4b3f3354788d705c3e1d73d5, type: 3}
       propertyPath: mainCam
       value: 
