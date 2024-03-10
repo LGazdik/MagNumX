@@ -64,6 +64,11 @@ public class interactions : MonoBehaviour
             {
                 l.Interact();
             }
+            
+            if (col.GetComponent<LeverSwitch>() is LeverSwitch ls)
+            {
+                ls.Interact();
+            }
 
             Debug.Log(col);
             if (col.GetComponent<Vor>() is Vor v)
